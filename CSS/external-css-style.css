@@ -1,0 +1,21 @@
+section {
+  background-color: #80cbc4;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  background-color: #ffb433;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #80cbc4;
+}
