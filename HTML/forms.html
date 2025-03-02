@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+
+<body>
+
+    <form action="register.php">
+        <div>
+            <label for="name">Adiniz: </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="surname">Soyadiniz: </label>
+            <input type="text" id="surname">
+        </div>
+
+        <div>
+            <label for="password">Parola</label>
+            <input type="password" id="password">
+        </div>
+
+
+        <div>
+            <p>En sevdigin programlama dili</p>
+            <input type="radio" id="html" name="programlama">
+            <label for="html">html</label>
+
+            <input type="radio" id="css" name="programlama">
+            <label for="css">css</label>
+
+            <input type="radio" id="c" name="programlama">
+            <label for="c">c</label>
+        </div>
+
+        <div>
+            <p>En sevdigin programlama dili</p>
+            <input type="checkbox" id="html2">
+            <label for="html2">html</label>
+
+            <input type="checkbox" id="css2">
+            <label for="css2">css</label>
+
+            <input type="checkbox" id="c2">
+            <label for="c2">c</label>
+        </div>
+
+        <div>
+            <label for="intro">Kendini anlat</label>
+            <textarea id="intro" rows="20" cols="30"></textarea>
+        </div>
+
+        <div>
+            <label for="cities">Sehir</label>
+            <select id="cities">
+                <option value="0">Seciniz...</option>
+                <option value="01">Adana</option>
+                <option value="06">Ankara</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="email">Eposta</label>
+            <input type="email" id="email">
+        </div>
+
+        <div>
+            <label for="birthdate">Dogum gununuz</label>
+            <input type="date" id="birthdate" max="2000-01-01" min="1900-01-01">
+        </div>
+
+
+        <br>
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+
+    </form>
+
+
+</body>
+
+</html>
