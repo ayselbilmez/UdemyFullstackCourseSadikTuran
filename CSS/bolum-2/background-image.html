@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #showcase {
+            background-image: url('../../assets/manzara.webp');
+            background-position-x: bottom left;
+            background-position-y: center;
+            height: 500px;
+            width: 100%;
+            /*normalde 100% olunca padding de olunca sayfaya sigmiyor bunu onlemek amacli border box ozelligi ekleniyor*/
+            padding: 10px;
+        }
+
+        #how-it-works {
+            background-color: blueviolet;
+            padding: 20px;
+        }
+
+        .main-header {
+            background-color: blueviolet;
+            padding: 8px 16px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 99px);
+            text-align: right;
+        }
+
+        .main-nav__items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main-nav__item {
+            display: inline-block;
+            margin: 0 8px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-nav__item a:hover,
+        .main-nav__item:hover::before {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active,
+        .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        .main-nav__item::before {
+            content: '\2022';
+            color: aliceblue;
+        }
+
+        .main-header__logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item--login a {
+            color: #fff;
+            background-color: #2E4C6D;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+
+        .main-nav__item--login::before {
+            content: none;
+        }
+
+        .main-nav__item--login a:hover {
+            color: aqua;
+            background-color: black;
+            border: 2px solid aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Filmler</a></li>
+                <li class="main-nav__item"><a href="#">Diziler</a></li>
+                <li class="main-nav__item main-nav__item--login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works?</h2>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

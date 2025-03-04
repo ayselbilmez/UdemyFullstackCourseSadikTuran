@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div p {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--1 - Descendant Selector () div altindaki tum p etiketini etkiler-->
+    <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+
+
+    <!--2 - child selector (>) sadece div altindaki ilk p etiketlerini etkiler-->
+    <!--3 - Adjacent Sibling Selector (+)  div bitisinden sonra gelen sadece ilk p elemanini etkiler-->
+    <!--4 - General Sibling Selector (~) divden sonra gelen tum p etiketlerini etkiler-->
+
+
+</body>
+
+</html>
