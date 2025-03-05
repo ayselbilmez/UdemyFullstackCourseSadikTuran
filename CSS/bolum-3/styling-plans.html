@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling plans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #showcase {
+            background-image: url('../../assets/manzara.webp');
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            /*normalde 100% olunca padding de olunca sayfaya sigmiyor bunu onlemek amacli border box ozelligi ekleniyor*/
+            padding: 10px;
+        }
+
+        #how-it-works {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-header {
+            background-color: blueviolet;
+            padding: 8px 16px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 99px);
+            text-align: right;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .main-nav__items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main-nav__item {
+            display: inline-block;
+            margin: 0 8px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-nav__item a:hover,
+        .main-nav__item:hover::before {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active,
+        .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        .main-nav__item::before {
+            content: '\2022';
+            color: aliceblue;
+        }
+
+        .main-header__logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item--login a {
+            color: #fff;
+            background-color: #2E4C6D;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+
+        .main-nav__item--login::before {
+            content: none;
+        }
+
+        .main-nav__item--login a:hover {
+            color: aqua;
+            background-color: black;
+            border: 2px solid aqua;
+        }
+
+        .row {
+            margin-bottom: 40px;
+
+        }
+
+        .col {
+            display: inline-block;
+            width: 30%;
+            padding: 16px;
+            margin: 8px;
+        }
+
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .icon-box h3 {
+            color: #3e4555;
+            font-size: 26px;
+        }
+
+        .icon-box i {
+            color: orange;
+        }
+
+        .col-2 {
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 350px;
+            background-color: brown;
+            vertical-align: top;
+        }
+
+        .features__left {
+            background-image: url(../../assets/features.jpeg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .features__right {
+            background-color: antiquewhite;
+            padding: 40px;
+            vertical-align: top;
+        }
+
+        .features__right h3 {
+            font-size: 30px;
+        }
+
+        .features a {
+            background-color: #fc997c;
+            color: #fff;
+            padding: 7px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid #fc997c;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .features a:hover {
+            border: 1px solid #fff;
+            color: #fc997c;
+            background-color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        .plan {
+            background: rgb(250, 251, 251);
+            text-align: center;
+            padding: 5px;
+            /* margin: 2px; */
+            width: 33.3%;
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .inner-plan {
+            background: #dca3a3;
+            padding: 25px 10px;
+            border-radius: 5px;
+
+        }
+
+        .row {
+            margin-bottom: 40px;
+        }
+
+        .plan__badge {
+            background: #fff;
+            color: tomato;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .recommended-plan {
+            color: #fff;
+            background-color: #2E4C6D !important;
+        }
+
+        .plan__features {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .plan__features li {
+            margin: 6px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Filmler</a></li>
+                <li class="main-nav__item"><a href="#">Diziler</a></li>
+                <li class="main-nav__item main-nav__item--login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <div class="row">
+                <h2>How it works?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium sequi fugit ipsam
+                    optio
+                    non provident aliquid aspernatur, labore rerum exercitationem unde quibusdam. Veniam cupiditate
+                    quidem
+                    eveniet asperiores, facilis dicta.</p>
+            </div>
+
+            <div class="row">
+                <div class="icon-box col">
+                    <i class="fa-solid fa-right-to-bracket fa-2xl"></i>
+                    <h3>Register</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis assumenda cupiditate, minima
+                        reprehenderit omnis unde!</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-brands fa-buffer fa-2xl"></i>
+                    <h3>Choose a Plan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis assumenda cupiditate, minima
+                        reprehenderit omnis unde!</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-solid fa-face-smile-wink fa-2xl"></i>
+                    <h3>Enjoy Movies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis assumenda cupiditate, minima
+                        reprehenderit omnis unde!</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row features">
+                <div class="col-2 features__left">
+
+                </div>
+                <div class="col-2 features__right">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo architecto ipsam culpa
+                        quibusdam dignissimos impedit fugit commodi, aperiam excepturi non omnis quaerat dolor aliquam
+                        dolorum maxime tenetur dolore at!</p>
+                    <a href="#">View Features</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans">
+            <div class="row">
+                <h2 class="section-title">Become Premium Member</h2>
+                <div class="clearfix container">
+                    <div class="plan">
+                        <div class="inner-plan">
+                            <h2>Free</h2>
+                            <h3>0/month</h3>
+                            <ul class="plan__features">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum sit amet.</li>
+                                <li>Lorem ipsum amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+
+                            <div>
+                                <button>Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <div class="inner-plan recommended-plan">
+                            <h2 class="plan__badge">Recommended</h2>
+                            <h2>Basic</h2>
+                            <h3>5.99/month</h3>
+                            <ul class="plan__features">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum sit amet.</li>
+                                <li>Lorem ipsum amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                            <div>
+                                <button>Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <div class="inner-plan">
+                            <h2>Premium</h2>
+                            <h3>19.99/month</h3>
+                            <ul class="plan__features">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum sit amet.</li>
+                                <li>Lorem ipsum amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                            <div>
+                                <button>Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

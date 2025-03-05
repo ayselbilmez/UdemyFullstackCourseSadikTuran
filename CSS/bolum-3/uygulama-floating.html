@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama Floating</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            background-color: #2D336B;
+            color: #FFF2F2;
+            padding: 15px;
+        }
+
+        .col {
+            float: left;
+            padding: 15px 15px 15px 0;
+        }
+
+        .menu {
+            width: 25%;
+
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #A9B5DF;
+        }
+
+        .menu li:hover {
+            cursor: pointer;
+            background-color: #FFF2F2;
+        }
+
+        .content {
+            width: 75%;
+            background-color: #7886C7;
+        }
+
+        .content h2,
+        p {
+            margin-left: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+    <main class="clearfix">
+        <div class="menu col">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+        </div>
+        <div class="content col">
+            <h2>Komple Web Gelistirme Egitimi</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex pariatur doloremque laborum veritatis! Harum
+                rem eius nemo officia voluptatum sequi labore voluptatem recusandae dicta voluptates libero ad ex, quo
+                placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit repudiandae itaque.
+                Voluptate consectetur necessitatibus ea, rem officiis neque! Vel optio sunt repellat quia quae? Iure
+                quas odio vel in.</p>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>
